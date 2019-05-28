@@ -1,0 +1,213 @@
+{
+
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=tcp:172.31.59.78\\DVT3BDOTGISAPP,1433;Initial Catalog=OOARS;User ID=ooarsdeveteam;Password=SPYg@%#345"
+  },
+  "App": {
+    "Token": "",
+    "UseToken": true,
+    "TokenUserName": "OOARSUser",
+    "TokenPassword": "OOARSUser",
+    "TokenServer": "http://dvt2adotgis.dti.state.de.us",
+    "TokenUrl": "http://ooarsdev.dot.state.de.us/ooarsapi/api/QPermit/55",
+    "StreetRestrictionField": "RESTRICTION_POINTS",
+    "UseDefaultCredentials": false,
+    "UseProxy": true,
+    "ProxyUrl": "http://dmzproxy.state.de.us:8080",
+    "ProxyUserName": "user",
+    "ProxyPassword": "user",
+    "LogToConsole": true,
+    "UseRouteHierarchy": true,
+    "ShowStreetAsLayer": true,
+    "GenericErrorMessage": "Could not create route",
+    "ESRIGeocoderUrl": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+    "StateAndCountyBoundary": "https://firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_BoundariesCountyState/MapServer/0",
+    "VehicleAxles": 5,
+    "RouteSolverToken": "lSndsLsrldLAEO_chG9Gf9d2aarETL5fULtxNktXKVsv2vnJIPJ8fAsddSxgC5oxk6wUj18cu5nwuKRm6ctbEg..",
+    "DMZProxy": "http://dmzproxy.state.de.us:8080",
+    "SampleAuthToken": "YW3ynujdl10HZTGbTWFSTFOl7P0h2buyMdemcELiCuqtGIaNcYRC32nYw5Z1Q8gy",
+    "SampleUserName": "xZCMyfCGMGIuSu82nT3JJg==",
+    "SamplePassword": "Ta8UQ61bjomNtHYd4h3wgA",
+    "PermitBaseUrl": "https://testws.state.de.us:1303/dot/routerWebServiceV2/permitInfo?applicationId={0}&authenticationToken={1}",
+    "UserAuthBaseUrl": "https://testws.state.de.us:1303/dot/routerWebServiceV2/authenticationInfo?userName={0}&password={1}",
+    "GeocoderUrl": "https://firstmaptest.gis.delaware.gov/arcgis/rest/services/Location/DE_CompositeLocator/GeocodeServer",
+    "NetworkUrl": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/DE_ROUTING/NAServer/Route/solve",
+    "GeometryServiceUrl": "https://firstmap.delaware.gov/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+    "PrintUrl": "https://firstmap.delaware.gov/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+    "StreetUrl": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/DE_ROUTING/MapServer/7",
+    "Layers": [
+      {
+        "Url": "https://firstmap.gis.delaware.gov/arcgis/rest/services/DE_Imagery/DE_Imagery_2017/ImageServer",
+        "Type": "Basemap",
+        "Title": "Aerial",
+        "Id": "de_aerial",
+        "ThumbnailUrl": "de_aerialimagery.png"
+      },
+      {
+        "Url": "https://firstmap.gis.delaware.gov/arcgis/rest/services/BaseMap/DE_BasemapCache/MapServer",
+        "Type": "Basemap",
+        "Title": "Streets",
+        "Id": "de_streets",
+        "ThumbnailUrl": "de_basemap.png"
+      },
+      {
+        "Url": "https://firstmap.gis.delaware.gov/arcgis/rest/services/BaseMap/DE_DarkGreyCache/MapServer",
+        "Type": "Basemap",
+        "Title": "Dark Grey",
+        "Id": "de_darkgrey",
+        "ThumbnailUrl": "de_darkgrey.png"
+      },
+      {
+        "Url": "https://firstmap.gis.delaware.gov/arcgis/rest/services/BaseMap/DE_LightGreyCache/MapServer",
+        "Type": "Basemap",
+        "Title": "Light Grey",
+        "Id": "de_lightgrey",
+        "ThumbnailUrl": "de_lightgrey.png"
+      },
+      {
+        "Url": "https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer",
+        "Type": "Basemap",
+        "Title": "ESRI Streets",
+        "Id": "esri_streets",
+        "ThumbnailUrl": "esri_street.png"
+      },
+      {
+        "Url": "https://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer",
+        "Type": "Basemap",
+        "Title": "ESRI Topographic",
+        "Id": "esri_topo",
+        "ThumbnailUrl": "esri_topo.png"
+      },
+      {
+        "Url": "https://firstmap.delaware.gov/arcgis/rest/services/OOARS/DE_Traffic_Signal_OOARS/MapServer/0",
+        "Type": "FeatureLayer",
+        "Title": "Traffic Signals"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/GUARDRAIL/MapServer/0",
+        "Type": "FeatureLayer",
+        "Title": "Guard Rails"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/BRIDGE_UNDER_ROAD_VC/MapServer/0",
+        "Type": "FeatureLayer",
+        "Title": "Bridges under Road"
+      },
+
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/BRIDGE_ON_ROAD_VC/MapServer/0",
+        "Type": "FeatureLayer",
+        "Title": "Bridges on Road"
+      },
+
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/RAILROAD_LINES/MapServer/0",
+        "Type": "FeatureLayer",
+        "Title": "Rail Lines"
+      },
+
+
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/RAILROAD_CROSSING/MapServer/0",
+        "Type": "FeatureLayer",
+        "Title": "Railroad Crossing"
+      },
+
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/OH_SIGN_STRUCTURE/MapServer/0",
+        "Type": "FeatureLayer",
+        "Title": "Sign Structures"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/TOLL_BOOTHS/MapServer/0",
+        "Type": "FeatureLayer",
+        "Title": "Toll Booths"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/TRUCK_RESTRICTED_ROADS/MapServer/0",
+        "Type": "FeatureLayer",
+        "Title": "Truck Restricted Roads"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/TEMPORARY_CLOSURE/MapServer/0",
+        "Type": "FeatureLayer",
+        "Title": "Temporary Closures"
+      },
+
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/DE_ROUTING/MapServer/7",
+        "Type": "FeatureLayer",
+        "Title": "Streets"
+      }
+    ],
+    "RestrictionLayers": [
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/BRIDGE_UNDER_ROAD_VC/MapServer/0",
+        "Title": "Bridges Under Road",
+        "HeightBuffer": 0.25,
+        "WidthBuffer": 0.25,
+        "StreetQueryString": "(RDWAY_ID = {0} AND ({1} >= BEG_MPD AND {1} <= END_MPD))",
+        "LayerQueryString": "(HCLEARANCE_VAL > 0 AND HCLEARANCE_VAL < {0}) OR (CLEARANCE_VAL > 0 AND CLEARANCE_VAL < {1})"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/BRIDGE_ON_ROAD_VC/MapServer/0",
+        "Title": "Bridges On Road",
+        "HeightBuffer": 0.25,
+        "WidthBuffer": 0.25,
+        "StreetQueryString": "(RDWAY_ID = {0} AND (({1} >= BEG_MPD AND {1} <= END_MPD) OR ({2} >= BEG_MPD AND {2} <= END_MPD)))",
+        "LayerQueryString": "(HCLEARANCE_VAL > 0 AND HCLEARANCE_VAL < {0}) OR (CLEARANCE_VAL > 0 AND CLEARANCE_VAL < {1})"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/RAILROAD_CROSSING/MapServer/0",
+        "Title": "Railroad Crossing",
+        "HeightBuffer": 0.25,
+        "WidthBuffer": 0.25,
+        "StreetQueryString": "(RDWAY_ID = {0} AND ({1} >= BEG_MPD AND {2} <= END_MPD))",
+        "LayerQueryString": "(HMIN_CLEAR > 0 AND HMIN_CLEAR < {0}) OR (MIN_CLEAR > 0 AND MIN_CLEAR < {1}) AND APPROACH_G = 'AT GRADE'",
+        "DefaultQueryString": "APPROACH_G = 'AT GRADE'"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/OH_SIGN_STRUCTURE/MapServer/0",
+        "Title": "Sign Structures",
+        "HeightBuffer": 0.25,
+        "WidthBuffer": 0.25,
+        "StreetQueryString": "(RDWAY_ID = {0} AND ({1} >= BEG_MPD AND {1} <= END_MPD))",
+        "LayerQueryString": "VERTCLR > 0 AND VERTCLR < {0}"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/TOLL_BOOTHS/MapServer/0",
+        "Title": "Toll Booths",
+        "HeightBuffer": 0.25,
+        "WidthBuffer": 0.25,
+        "StreetQueryString": "(RDWAY_ID = {0} AND ({1} >= BEG_MPD AND {1} <= END_MPD))",
+        "LayerQueryString": "(MAXIMUMPASSABLEWIDTH > 0 AND MAXIMUMPASSABLEWIDTH < {0}) OR (ANTENNAHEIGHT > 0 AND ANTENNAHEIGHT < {1})"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/TRUCK_RESTRICTED_ROADS/MapServer/0",
+        "Title": "Truck Restricted Roads",
+        "HeightBuffer": 0.25,
+        "WidthBuffer": 0.25,
+        "StreetQueryString": "(RDWAY_ID = {0} AND (({1} >= BEG_MPD AND {1} <= END_MPD) OR ({2} >= BEG_MPD AND {2} <= END_MPD)))",
+        "LayerQueryString": "THROUGHTRAFFIC = 'Y' OR (HCLARAENCE > 0 AND HCLARAENCE < {0}) OR (VCLEARANCE > 0 AND VCLEARANCE < {1}) OR (MAXAXLEALLOWED > 0 AND MAXAXLEALLOWED < {2})"
+      },
+      {
+        "Url": "https://firstmap.delaware.gov/arcgis/rest/services/OOARS/DE_Traffic_Signal_OOARS/MapServer/0",
+        "Title": "Traffic Signals",
+        "HeightBuffer": 0.25,
+        "StreetQueryString": "(RDWAY_ID = {0} AND ({1} >= BEG_MPD AND {1} <= END_MPD))",
+        "LayerQueryString": "MIN_CLEAR> 0 AND MIN_CLEAR < {0}"
+      },
+      {
+        "Url": "https://dvt2adotgis.dti.state.de.us/arcgis/rest/services/Deldot_Test/TEMPORARY_CLOSURE/MapServer/0",
+        "Title": "Temporary Closure",
+        "HeightBuffer": 0.25,
+        "WidthBuffer": 0.25,
+        "StreetQueryString": "(RDWAY_ID = {0} AND (({1} >= BEG_MPD AND {1} <= END_MPD) OR ({2} >= BEG_MPD AND {2} <= END_MPD)))",
+        "WeightBuffer": 0.25,
+        "LengthBuffer": 0.25,
+        "LayerQueryString": "IS_FULL_CLOSURE = 'Y' OR (MAX_ALLOWABLE_VEH_WIDTH > 0 AND MAX_ALLOWABLE_VEH_WIDTH < {0}) OR (MAX_ALLOWABLE_VEH_HEIGHT > 0 AND MAX_ALLOWABLE_VEH_HEIGHT < {1}) OR (MAX_ALLOWABLE_VEH_LENGTH > 0 AND MAX_ALLOWABLE_VEH_LENGTH < {2}) OR (MAX_ALLOWABLE_VEH_GROSS_WEIGHT > 0 AND MAX_ALLOWABLE_VEH_GROSS_WEIGHT < {3}) OR (MAX_ALLOWABLE_AXLES > 0 AND MAX_ALLOWABLE_AXLES <={4}) AND (CLOSURE_STARTS > TIMESTAMP '{5}' AND CLOSURE_STARTS < TIMESTAMP '{6}') OR (CLOSURE_STARTS < TIMESTAMP '{7}' AND CLOSURE_ENDS > TIMESTAMP '{8}')"
+      }
+    ]
+  }
+}
+
